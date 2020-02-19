@@ -1,0 +1,8 @@
+# arbitrary ports; To modify only if the daemon is launched in a remote server
+ssh:
+  address_server: ['999.99.9.99', 6000]
+  address_client: ['999.99.9.99', 6001]
+  username: gaston
+local:
+  address_server: ['localhost', 6000]
+  address_client: ['localhost', 6001]

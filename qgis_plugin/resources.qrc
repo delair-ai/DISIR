@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/plugins/interact_learn" >
+        <file>icon.png</file>
+    </qresource>
+</RCC>

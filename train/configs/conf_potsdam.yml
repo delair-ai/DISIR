@@ -1,0 +1,55 @@
+ext: "_basic"
+SUB_TRAIN: 1
+
+#################
+# Train options #
+#################
+# # of epochs to train
+EPOCHS: 50
+# # of steps in an epoch
+EPOCH_SIZE: 10000
+
+# Where to save outputs
+SAVE_FOLDER: data/outputs/
+
+# Where to save the models
+PATH_MODELS: data/models/
+# Weights
+
+BATCH_SIZE: 8
+
+# Tiling stride
+STRIDE: 512
+# Tiling window size
+WINDOW_SIZE:
+  - 512
+  - 512
+# Network to train
+# Possible Values:
+    # "LinkNet34"
+    # "SegNet"
+    # "UNet"
+    # "DeepLabv3_plus"
+    # ERFNet
+    # LEDNet
+    # D3Net
+NET_NAME: "LinkNet34"
+# Number of input channels
+IN_CHANNELS: 3
+# Number of classes
+N_CLASSES: 6
+
+TEST_WORKERS: 6 # Number of threads to use during testing. Has to be lower than at training since we now load full images.
+
+# Train parameters
+OPTIM_BASELR : 0.05
+OPTIM_STEPS : 
+  - 15
+  - 30
+  - 45
+WORKERS : 12  # Number of threads to use during training
+WEIGHTED_LOSS : False  # Weight the loss for class balancing
+REVOLVER_WEIGHTED: False  # Weight the sampling for Revolver
+TRANSFORMATION : True  # Data augmentation (flip vertically and horizontally)
+test_size : 0.2  # Keeps x data for validation. If the value is 1, train and test on the full dataset (ie no validation set)
+DISTANCE_TRANSFORM: True  # True enables distance transform to dilate annotations
