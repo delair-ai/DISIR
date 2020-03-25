@@ -72,9 +72,10 @@ class Daemon:
                     sr=proj,
                     channels_schema={"nodata": self.n_classes},
                 )
-
-            nodata_mask = nodata_mask[fp.slice_in(self.original_fp)]
-            output[nodata_mask] = self.n_classes
+            if nodata_mask:
+                subslice = fp.slice_in(self.original_fp)
+                nodata_mask = nodata_mask[subslice]
+                output[nodata_mask] = self.n_classes
 
             ds.output.set_data(output.astype(np.uint8), fp, channels=0)
             ds.output.close()
