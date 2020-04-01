@@ -12,6 +12,8 @@ It is separated into two parts:
 1. [frontend](./frontend) deals with the QGIS interface and the interaction with the user
 2. [backend](./backend) deals with a background program launched in a terminal outside QGIS to perform the heavy computations (e.g. the semantic segmentation).
 
+Additional information to better take control of this plugin can be found in [this PDF](./DISIR_plugin_instructions.pdf).
+
 # Set up
 
 If the backend is used locally, make sure to be in a python environment with the requirements installed. 

@@ -6,7 +6,7 @@
 <br />
 
 # Presentation
-This repository contains the code of **DISIR**: Deep Image Segmentation with Interactive Refinement. In a nutshell, it consists in neural networks trained to perform semantic segmentation with human guidance. You may refer to our [paper](arxiv_ref) for detailed explanations.
+This repository contains the code of **DISIR**: Deep Image Segmentation with Interactive Refinement. In a nutshell, it consists in neural networks trained to perform semantic segmentation with human guidance. You may refer to our [paper](https://arxiv.org/abs/2003.14200) for detailed explanations.
 
  This repository is divided into two parts:
  - `train` which contains the training code of the networks ([README](./train/README.md))
@@ -31,8 +31,19 @@ pip install -r requirements.txt
 
  # References
 
-If you use this work for your projects, please take the time to cite our ISPRS Congress conference paper:
-[...]
+If you use this work for your projects, please take the time to cite our ISPRS Congress conference paper (TO APPEAR):
+
+```
+@article{lenczner_disir_2020,
+title={DISIR: Deep Image Segmentation with Interactive Refinement},
+author={Lenczner, Gaston and {Le Saux}, Bertrand and Luminari, Nicola and {Chan Hon Tong}, Adrien and {Le Besnerais}, Guy},
+journal={ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences},
+year = {2020},
+publisher={Copernicus GmbH}
+}
+```
+
+Preprint is available [here](https://arxiv.org/abs/2003.14200). 
  
  # Licence
 
