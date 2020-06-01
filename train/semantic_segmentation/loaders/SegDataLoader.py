@@ -57,7 +57,7 @@ class SegDataLoader(Dataset, ABC):
             )
             train_ids = train_ids[: int(self.cfg.SUB_TRAIN * len(train_ids))]
         else:
-            train_ids = test_ids
+            train_ids, test_ids = dataset_ids, dataset_ids
         if len(train_ids) and len(test_ids):
             return train_ids, test_ids
         dataset_path = os.path.abspath(self.dataset)
