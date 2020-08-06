@@ -6,7 +6,7 @@
 <br />
 
 # Presentation
-This repository contains the code of **DISIR**: Deep Image Segmentation with Interactive Refinement. In a nutshell, it consists in neural networks trained to perform semantic segmentation with human guidance. You may refer to our [paper](https://arxiv.org/abs/2003.14200) for detailed explanations.
+This repository contains the code of **DISIR**: Deep Image Segmentation with Interactive Refinement. In a nutshell, it consists in neural networks trained to perform semantic segmentation with human guidance. You may refer to our [paper](https://www.isprs-ann-photogramm-remote-sens-spatial-inf-sci.net/V-2-2020/877/2020/isprs-annals-V-2-2020-877-2020.pdf) for detailed explanations.
 
  This repository is divided into two parts:
  - `train` which contains the training code of the networks ([README](./train/README.md))
@@ -31,19 +31,21 @@ pip install -r requirements.txt
 
  # References
 
-If you use this work for your projects, please take the time to cite our ISPRS Congress conference paper (TO APPEAR):
+If you use this work for your projects, please take the time to cite our [ISPRS Congress conference paper](https://www.isprs-ann-photogramm-remote-sens-spatial-inf-sci.net/V-2-2020/877/2020/isprs-annals-V-2-2020-877-2020.pdf):
 
 ```
-@article{lenczner_disir_2020,
-title={DISIR: Deep Image Segmentation with Interactive Refinement},
-author={Lenczner, Gaston and {Le Saux}, Bertrand and Luminari, Nicola and {Chan Hon Tong}, Adrien and {Le Besnerais}, Guy},
-journal={ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences},
-year = {2020},
-publisher={Copernicus GmbH}
+@Article{isprs-annals-V-2-2020-877-2020,
+AUTHOR = {Lenczner, G. and Le Saux, B. and Luminari, N. and Chan-Hon-Tong, A. and Le Besnerais, G.},
+TITLE = {DISIR: DEEP IMAGE SEGMENTATION WITH INTERACTIVE REFINEMENT},
+JOURNAL = {ISPRS Annals of Photogrammetry, Remote Sensing and Spatial Information Sciences},
+VOLUME = {V-2-2020},
+YEAR = {2020},
+PAGES = {877--884},
+URL = {https://www.isprs-ann-photogramm-remote-sens-spatial-inf-sci.net/V-2-2020/877/2020/},
+DOI = {10.5194/isprs-annals-V-2-2020-877-2020}
 }
 ```
 
-Preprint is available [here](https://arxiv.org/abs/2003.14200). 
  
  # Licence
 
